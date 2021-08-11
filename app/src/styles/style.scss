@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@import 'common/font', 
+        'common/root',
+         'common/grid',
+        'layout/header',
+        'layout/header-baner',
+        'layout/header-nav',
+        'layout/header-content',
+        'layout/main',
+        'layout/films',
+        'layout/main-poster',
+        'layout/collection',
+        'layout/series',
+        'layout/footer';

@@ -1,0 +1,53 @@
+.header-nav {
+    background: #000;
+    padding-top: 48px;
+    padding-bottom: 2px;
+@include media($lg){
+    padding-top: 35px;
+}
+@include media($md){
+    padding-top: 25px;
+}
+@include media($sm){
+    padding-top: 20px;
+}
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        @include media($md){
+            display: none;
+        }
+
+        &_link {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            margin: 0 9px;
+            padding: 0 6px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_link:hover {
+            color: #ED8E00;
+        }
+
+        &_link::after {
+            content: '';
+            height: 2px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        &_link:hover::after {
+            background: #ED8E00;
+        }
+    }
+}

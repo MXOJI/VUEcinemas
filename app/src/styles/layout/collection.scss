@@ -1,0 +1,41 @@
+.collection {
+    padding-top: 61px;
+    padding-bottom: 63px;
+    background: #040D1F;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
+        &__card {
+            position: relative;
+
+            &_img {
+                width: 100%;
+            }
+
+            &_description {
+                font-family: $comfortaa;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 22px;
+                color: #FFFFFF;
+                margin-top: 15px;
+            }
+        }
+
+        &__contain {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}

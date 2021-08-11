@@ -1,0 +1,36 @@
+.header-baner{
+    background: linear-gradient(90.09deg, #3800AF 0%, #BF7204 97.52%, #C27500 100%, #C27500 100%);
+    padding: 20px 0;
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__description{
+        font-family: $comfortaa;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        color: #FFFFFF;
+        max-width: 170px;
+        margin-left: 24px;
+        @include media($md){
+            font-size: 14px;
+        }
+        @include media($sm){
+            font-size: 12px;
+        }
+    }
+}
+
+.icon__films{
+    font-size: 40px;
+    color: #fff;
+    @include media($md){
+        font-size: 30px;
+    }
+    @include media($sm){
+        font-size: 25px;
+    }
+}

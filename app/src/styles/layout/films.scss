@@ -1,0 +1,93 @@
+.films {
+    background: #040D1F;
+    padding-top: 30px;
+    padding-bottom: 67px;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+        &__card {
+            position: relative;
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 55px;
+            padding-bottom: 25px;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(241, 129, 40, 0.35) 0%, rgba(0, 0, 0, 0.71) 51.04%, rgba(7, 15, 25, 0.8) 100%);
+                z-index: 0;            
+            }
+
+            &_img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+
+            &_icon i {
+                position: relative;
+                z-index: 2;
+                color: white;
+                font-size: 50px;
+            }
+
+            &_icon i::after {
+                position: absolute;
+                left: 0;
+                color: rgba(255, 255, 255, 0.5);
+            }
+
+            &_time {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 10px;
+                color: #FFFFFF;
+                padding: 7px 27px;
+                background: rgba(7, 15, 25, 0.2);
+                border: 1px solid #FFFFFF;
+                border-radius: 9px;
+                margin-top: 13px;
+                margin-bottom: 32px;
+                // z-index: 2;
+            }
+
+            &_title {
+                font-family: $montserrat;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+                margin-bottom: 13px;
+                // z-index: 2;
+            }
+
+            &_description {
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+                max-width: 235px;
+                text-align: justify;
+                // z-index: 2;
+            }
+        }
+    }
+}
